@@ -1,0 +1,46 @@
+h1{
+
+    font-size: 60px;
+}
+
+p{
+    font-size: 22px;
+}
+
+.container1{
+
+    height: 400px;
+}
+
+.fade1{
+    
+  animation: myfirst1 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myfirst1 {
+    
+    0% { opacity: 0; transform: translateY(-50px);}
+    20% { opacity: 1; transform: translateY(0px);}
+    100% { opacity: 1; transform: translateY(0px);}
+}
+
+.fade2{
+    
+  animation: myfirst2 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myfirst2 {
+    
+    0% { opacity: 0; transform: translateY(-50px);}
+    5% { opacity: 0; transform: translateY(-50px);}
+    25% { opacity: 1; transform: translateY(0px);}
+    100% { opacity: 1; transform: translateY(0px);}
+}
+
+.cyan-size{
+
+    height: 700px;
+    width: 550px;
+}
