@@ -1,0 +1,67 @@
+.big-bg{
+
+    background-color: blue;
+    height: 100mm;
+}
+
+.options{
+
+    height: 15mm;
+}
+
+.grid{
+
+    height: 5cm;
+    display: grid;
+    grid-template-columns: [start] 33% [two] 34% [three] 33% [end];
+    grid-template-rows: [start] 50% [two] 25% [three] 25% [end];
+}
+
+.e11{
+
+    grid-column-start: start;
+    grid-column-end: end;
+    grid-row-start: start;
+    grid-row-end: two;
+}
+
+.e12{
+
+    grid-column-start: start;
+    grid-column-end: end;
+    grid-row-start: two;
+    grid-row-end: three;
+}
+
+.e13{
+
+    grid-column-start: start;
+    grid-column-end: two;
+    grid-row-start: three;
+    grid-row-end: end;
+}
+
+.e23{
+
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: three;
+    grid-row-end: end;
+}
+
+.e33{
+
+    grid-column-start: three;
+    grid-column-end: end;
+    grid-row-start: three;
+    grid-row-end: end;
+}
+
+divv{
+    border: white 1px solid;
+}
+
+a{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
