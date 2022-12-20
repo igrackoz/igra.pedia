@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'IGRA-WEB';
+  
+  constructor(){
+
+  }
+
+  public isOpen_session = sessionStorage.setItem('isOpen','true');
 }

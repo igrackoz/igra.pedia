@@ -7,6 +7,15 @@ p{
     font-size: 22px;
 }
 
+.centrar{
+
+    text-align: center;
+}
+
+/* *{
+    border:  solid black 1px;
+} */
+
 .container1{
 
     height: 400px;
@@ -44,3 +53,4 @@ p{
     height: 700px;
     width: 550px;
 }
+
