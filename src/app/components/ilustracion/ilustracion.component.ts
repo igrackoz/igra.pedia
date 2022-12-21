@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Storage, ref, uploadBytes, listAll, getDownloadURL } from '@angular/fire/storage';
+import { AngularFireStorage } from '@angular/fire/compat/storage';
+
 
 @Component({
   selector: 'app-ilustracion',
@@ -7,9 +10,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IlustracionComponent implements OnInit {
 
-  constructor() { }
+  images: string[];
+  
+  constructor(private storage:Storage){
+
+    this.images = [];
+  }
 
   ngOnInit(): void {
+
+    this.getImages();
+  }
+
+  getImages(){
+
+    const imgRef = ref(this.storage, 'ilustraciones');
+
+    listAll(imgRef)
+      .then(async response => {
+      console.log(response);
+      for (let item of response.items){
+        const url = await getDownloadURL(item);
+        this.images.push(url);
+      } 
+
+    }).catch(error  => console.log(error));
   }
 
 }

@@ -1,2 +1,8 @@
 <app-nav></app-nav>
-<p>ilustracion works!</p>
+<div class="contenedor">
+    <div class="galeria d-flex flex-wrap">
+        <div>
+            <img class="image" [src]="image" *ngFor="let image of images" alt="">
+        </div>
+    </div>
+</div>

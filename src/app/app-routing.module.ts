@@ -18,6 +18,8 @@ import { LaIslaMecanicaComponent } from './components/escritura/la-isla-mecanica
 import { ModeladoComponent } from './components/modelado/modelado.component';
 import { HomeComponent } from './components/home/home.component';
 
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+
 const routes: Routes = [
   { path: 'inicio', component: HomeComponent },
   { path: 'ilustraciones', component: IlustracionComponent },
@@ -25,10 +27,10 @@ const routes: Routes = [
 
   // PACEMAKER
   // -----------------------------------------------------------------------------------------------------
-  { path: 'escritura/pacemaker', component: ResumenComponent },
-  { path: 'escritura/pacemaker/historia', component: HistoriaComponent },
-  { path: 'escritura/pacemaker/personajes', component: PersonajesComponent },
-  { path: 'escritura/pacemaker/sistema-de-poder-nearth', component: NearthComponent },
+  { path: 'escritura/pacemaker', component: SidebarComponent },
+  { path: 'escritura/pacemaker/historia', component: SidebarComponent },
+  { path: 'escritura/pacemaker/personajes', component: SidebarComponent },
+  { path: 'escritura/pacemaker/sistema-de-poder-nearth', component: SidebarComponent },
   // -----------------------------------------------------------------------------------------------------
   
   { path: 'escritura/ribbonella', component: RibbonellaComponent },

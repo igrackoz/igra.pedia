@@ -18,6 +18,11 @@ import { ResumenComponent } from './components/escritura/pacemaker/resumen/resum
 import { HistoriaComponent } from './components/escritura/pacemaker/historia/historia.component';
 import { NearthComponent } from './components/escritura/pacemaker/nearth/nearth.component';
 import { PersonajesComponent } from './components/escritura/pacemaker/personajes/personajes.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,11 @@ import { PersonajesComponent } from './components/escritura/pacemaker/personajes
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent]

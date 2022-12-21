@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "igra-pedia": {
+      "hosting": {
+        "IGRA-WEB": [
+          "igra-pedia"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "igra-pedia"
+  }
+}
