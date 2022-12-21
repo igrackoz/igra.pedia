@@ -19,11 +19,14 @@ import { ModeladoComponent } from './components/modelado/modelado.component';
 import { HomeComponent } from './components/home/home.component';
 
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { NavComponent } from './components/nav/nav.component';
 
 const routes: Routes = [
-  { path: 'inicio', component: HomeComponent },
-  { path: 'ilustraciones', component: IlustracionComponent },
-  { path: 'escritura', component: EscrituraComponent },
+
+  { path: 'inicio', component: NavComponent },
+  { path: 'ilustraciones', component: NavComponent },
+  { path: 'escritura', component: NavComponent },
+  { path: 'modelado', component: NavComponent },
 
   // PACEMAKER
   // -----------------------------------------------------------------------------------------------------
@@ -36,7 +39,7 @@ const routes: Routes = [
   { path: 'escritura/ribbonella', component: RibbonellaComponent },
   { path: 'escritura/rocket-man', component: RocketManComponent },
   { path: 'escritura/la-isla-mecanica', component: LaIslaMecanicaComponent },
-  { path: 'modelado', component: ModeladoComponent },
+  
   { path: '**', redirectTo: 'inicio' }
 ];
 

@@ -18,3 +18,7 @@
         </div>
     </div>
 </div>
+<app-home *ngIf=" locacion == 'inicio';"></app-home>
+<app-ilustracion *ngIf=" locacion == 'ilustraciones';"></app-ilustracion>
+<app-escritura *ngIf=" locacion == 'escritura';"></app-escritura>
+<app-modelado *ngIf=" locacion == 'modelado';"></app-modelado>
