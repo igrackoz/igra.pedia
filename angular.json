@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "https://igrackoz.github.io/igra.pedia/",
             "outputPath": "dist/igra-web",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,6 +29,9 @@
             "scripts": []
           },
           "configurations": {
+            "github-pages": {
+              "baseHref": "/AngularExamplesAndSnippets/"
+            },
             "production": {
               "budgets": [
                 {
