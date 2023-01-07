@@ -10,10 +10,10 @@ import {Location} from '@angular/common';
     trigger('nav-extension', [
 
       state('closed', style({
-        width: '70px',
+        width: '55px',
       })),
       state('open', style({
-        width: '350px',
+        width: '335px',
       })),
       transition('closed => open', [
         animate('0.4s cubic-bezier(.16,.67,.21,.97)')
@@ -25,10 +25,10 @@ import {Location} from '@angular/common';
     trigger('slide', [
 
       state('abierto', style({
-        transform: 'translateX(-210px)',
+        transform: 'translateX(-225px)',
       })),
       state('cerrado', style({
-        transform: 'translateX(70px)',
+        transform: 'translateX(55px)',
       })),
       transition('abierto => cerrado', [
         animate('0.4s cubic-bezier(.16,.67,.21,.97)')

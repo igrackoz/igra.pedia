@@ -36,9 +36,13 @@ const routes: Routes = [
   { path: 'escritura/pacemaker/sistema-de-poder-nearth', component: SidebarComponent },
   // -----------------------------------------------------------------------------------------------------
   
+  { path: 'escritura/one-shots', component: RibbonellaComponent },
   { path: 'escritura/ribbonella', component: RibbonellaComponent },
   { path: 'escritura/rocket-man', component: RocketManComponent },
   { path: 'escritura/la-isla-mecanica', component: LaIslaMecanicaComponent },
+
+  
+  { path: 'escritura/historias-cortas', component: RibbonellaComponent },
   
   { path: '**', redirectTo: 'inicio' }
 ];
